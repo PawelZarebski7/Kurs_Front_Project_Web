@@ -1,33 +1,256 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
-h1 {
-    color: red;
-    font-size: 40px;
-    text-decoration: underline;
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightskyblue;
+}
+
+nav {
+    background: #0082e5;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    font-family: 'Zen Dots', cursive;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
     font-family: 'Zen Dots', cursive;
 }
 
-.blue {
-    color: blue;
-    font-style: italic;
+a.active, a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
 }
 
-#green {
-    color: green;
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+section.header{ 
+    background: url(./assets/ship_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 90px);
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    font-family: 'Zen Dots', cursive;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.main-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 34px;
+    background: transparent;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    border: 2px solid #f44336;
+    transition: 1s;
+    color: #f44336;
+    font-weight: bold;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.anchor-style{
+    margin-bottom: 40px;
+    font-size: 45px;
+}
+
+@media(max-width: 800px){
+    .row {
+        flex-direction: column;
+    }
+}
+
+.flota {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Zen Dots', cursive;
+}
+
+.flota-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.flota-col img {
+    width: 100%;
+    display: block;
+}
+
+.flota-name {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flota-name h3 {
+    font-family: 'Zen Dots', cursive;
+    width: 100%;
     font-weight: 900;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.zendots {
+.flota-name:hover h3 {
+    bottom: 42%;
+    opacity: 1;
+} 
+
+.contact-header {
     font-family: 'Zen Dots', cursive;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.fontshock {
-    font-family: 'Libre Barcode EAN13 Text', cursive;
-    color: indigo;
+.contact-section {
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
 }
 
-.magicfont {
-    font-family: 'Dancing Script', cursive;
-    color: lawngreen;
-    background-color: #000;
+footer {
+    height: 50px;
+    background: lightslategray;
 }
+
+footer p {
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width: 950px){
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+        text-decoration: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+  }
+
+  #check:checked ~ ul {
+      left: 0;
+  }
+}
+

@@ -12,12 +12,82 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>RED</h1>
-    <p class="blue">BLUE</p>
-    <p id="green">Green</p>
-    <i style="font-size: 90px; color: blueviolet;" class="fab fa-acquisitions-incorporated"></i>
-    <p class="magicfont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nesciunt.</p>
-    
-    <h4>Succes !!!!!</h4>
+<header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label for="" class="logo">SHIP CARGO</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="header">
+        <div class="text-box">
+            <h1>World's Biggest Cargo</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <br>
+            <i class="fas fa-anchor anchor-style"></i>
+            <br>
+            <a href="#" class="main-btn">Visit Us</a>
+           
+        </div>
+    </section>
+    <br>
+    <section class="flota">
+      <h1>Our Ships</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="flota-col">
+          <img src="./assets/ship_1.jpg" alt="ship one">
+          <div class="flota-name">
+            <h3>Sea Queen</h3>
+          </div>
+        </div>
+        <div class="flota-col">
+          <img src="./assets/ship_2.jpg" alt="ship two">
+          <div class="flota-name">
+            <h3>Windy Marry</h3>
+          </div>
+        </div>
+        <div class="flota-col">
+          <img src="./assets/ship_3.jpg" alt="ship three">
+          <div class="flota-name">
+            <h3>Wizard</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section class="contact-section">
+     <h2 class="contact-header">Contact Form</h2>
+     <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+   </section>
+</main>
+<footer>
+  <p>Ship Cargo Company 2021</p>
+</footer>
 </body>
 </html>
