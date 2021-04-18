@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+h1 {
+    color: red;
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: 'Zen Dots', cursive;
+}
+
+.blue {
+    color: blue;
+    font-style: italic;
+}
+
+#green {
+    color: green;
+    font-weight: 900;
+}
+
+.zendots {
+    font-family: 'Zen Dots', cursive;
+}
+
+.fontshock {
+    font-family: 'Libre Barcode EAN13 Text', cursive;
+    color: indigo;
+}
+
+.magicfont {
+    font-family: 'Dancing Script', cursive;
+    color: lawngreen;
+    background-color: #000;
+}
